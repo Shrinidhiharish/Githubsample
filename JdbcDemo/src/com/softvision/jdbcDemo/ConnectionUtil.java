@@ -11,27 +11,22 @@ public class ConnectionUtil {
 	private static final String PASSWORD = "root";
 	static Connection con = null;
 
-	public static Connection getconnection() 
-	{
-		try 
-		{
+	public static Connection getconnection() {
+		try {
 			Class.forName("com.mysql.jdbc.Driver");
-		 con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+			con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
 			System.out.println("connection established");
-		} 
-		
-		catch (ClassNotFoundException e)
-		{	
+		}
+
+		catch (ClassNotFoundException e) {
 			e.printStackTrace();
-		} 
-		
-		catch (SQLException sqe)
-		{
+		}
+
+		catch (SQLException sqe) {
 			sqe.printStackTrace();
-		} 
-		
-		catch (Exception e) 
-		{
+		}
+
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 		return con;

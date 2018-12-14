@@ -16,7 +16,6 @@ public class MainRunner {
 
 			int choice;
 			Scanner sc = new Scanner(System.in);
-
 			System.out.println("select the table on which you wish to perform opersations:");
 			System.out.println("1. customers \t 2.Order_items \t 3. Orders \t 4. Products 5. Exit\n ");
 			choice = sc.nextInt();
@@ -45,7 +44,6 @@ public class MainRunner {
 				break;
 			default:
 				System.out.println("no other choice");
-
 			}
 		}
 	}
